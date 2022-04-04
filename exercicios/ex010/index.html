@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+</head>
+<body>
+    <h1>imagens audio e video</h1>
+    <p>
+        tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+
+    <h1>reproduzindo audios</h1>
+    <audio preload="auto" controls loop>
+        <source src="audio/Blueday.mp3" type="audio/mpeg">
+        <source src="audio/Blueday.mp3" type="audio/ogg">
+        <source src="audio/Blueday.mp3" type="audio/wav">
+        <p>seu navegador não reproduz audio</p>
+        <a href="audio/Blueday.mp3">clique aqui para baixar o audio</a>
+    </audio>
+
+    <h1>agora um vídeo hospedado no youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gqrySQQzvvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+</body>
+</html>
